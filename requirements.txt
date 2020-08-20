@@ -1,0 +1,14 @@
+numpy
+scipy
+pandas
+opencv-python
+dlib
+torch
+torchvision
+tensorboardX
+pyyaml
+h5py
+tqdm
+yacs
+fvcore
+termcolor
