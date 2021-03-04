@@ -287,7 +287,7 @@ def display_canv(CANV_MODE, cur_pos=None):
 	cv2.moveWindow("black_canv", 0,0)
 	return (rng_pos, cur_pos)
 
-def plot_eye_XYZ(pts, name, savepath):
+def plot_eye_XYZ(pts, name, save_path):
 
 	X_arr = np.array([x[0] for x in pts])
 	Y_arr = np.array([x[1] for x in pts])
@@ -304,8 +304,8 @@ def plot_eye_XYZ(pts, name, savepath):
 	ax2.grid()
 	ax3.grid()
 	# plt.show()
-	if savepath:
-		plt.savefig(savepath+name+'.pdf')
+	if save_path:
+		plt.savefig(save_path+name+'.pdf')
 	else:
 		plt.savefig(name+'.pdf')
 	plt.close()
