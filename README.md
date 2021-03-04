@@ -12,6 +12,12 @@
 Currently it is calibrated to my personal MBP13 so this needs to be adjusted accoring to your computer:
 > check **screen_conf.py** for more details
 
+## Model weights
+* Landmarks: http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
+* Eye model: https://github.com/hysts/pytorch_mpiigaze_demo/releases/download/v0.1.0/mpiigaze_resnet_preact.pth
+* Face model: https://github.com/hysts/pytorch_mpiigaze_demo/releases/download/v0.1.0/mpiifacegaze_resnet_simple.pth
+The Landmarks dlib file needs to be unzipped and moved to **pytorch_mpiigaze/data/dlib/** folder. Move the pth files into **data/models/** -> **mpiigaze/resnet_preact/** for the eye model and **mpiifacegaze/resnet_simple_14/** for the face model.
+
 ## Run the script
 * eye model: configs/demo_mpiigaze_resnet.yaml
 * face model: configs/demo_mpiifacegaze_resnet_simple_14.yaml
