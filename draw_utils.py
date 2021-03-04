@@ -206,7 +206,7 @@ def random_sequence(img):
 
 
 
-def plot_pts(pts, name, MAE = None, savepath = None):
+def plot_pts(pts, name, MAE = None, save_path = None):
 	rng_pos = np.array([list(y) for y in [x[0] for x in pts]])
 	cur_pos = np.array([list(y) for y in [x[1] for x in pts]])
 	
@@ -220,7 +220,7 @@ def plot_pts(pts, name, MAE = None, savepath = None):
 	plt.gca().invert_yaxis()
 	plt.grid()
 	plt.legend()
-	if savepath:
+	if save_path:
 		plt.savefig(save_path+str_name+'.png')
 	else:
 		plt.savefig(str_name+'.png')
