@@ -23,7 +23,6 @@ import pickle
 import time
 import imutils
 import sys
-import os
 
 import draw_utils
 from helper_fn import point_to_screen, dump_dict, calc_metrics, round_tup
